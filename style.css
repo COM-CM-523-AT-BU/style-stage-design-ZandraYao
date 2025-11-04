@@ -44,3 +44,280 @@ body {
 }
 
 // Begin theme styles
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+body, p, a, li, blockquote, input, textarea, select, button{
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+*, *::before, *::after { 
+  box-sizing: inherit; 
+}  
+html, body {
+  background-color: rgb(226, 238, 249);
+  color: #333;
+}
+a {
+  color: #57b4ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+header {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: azure;
+  border-bottom: 1px solid #eee;
+}
+header h1 {
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 1.05;
+}
+header h2 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #666;
+}
+nav {
+  background-color: #002389;
+  border-bottom: 1px solid rgba(169, 180, 212, 0.25);
+  padding: 1rem 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+nav li{
+  display: inline-block;
+  margin: 0 .5rem;
+}
+nav a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+nav a:hover {
+  background: #1a2230;
+  text-decoration: none;
+}
+h2, h3{
+  font-weight:700;
+  margin:0 0 .55rem;
+}
+p + p{ margin-top:.55rem; }
+ul, ol{ padding-left:1.2em; }
+main{
+  padding:2rem 1rem;
+}
+article section.container, aside .container,.page-footer .container{
+  background:#032265;
+  border:1px solid rgba(180,190,210,.28);
+  border-radius:.75rem;
+  padding:1.125rem;
+  margin-top:1rem;
+  color:#e9edf4;
+}
+.link-guidelines,
+.link-downloadcss,
+.link-downloadhtml,
+.link-codepen,
+.link-allstyles,
+.link-support,
+.link-rss,
+.page-footer .link-github,
+.link-twittercontact{
+  display:inline-block;
+  padding:.55rem .85rem;
+  margin-top:.5rem;
+  border-radius:999px;
+  font-weight:700;
+  color:#0f1220;
+  background:#86d2ff; 
+}
+#styles .features{
+  list-style:none;
+  padding-left:0;
+  margin: 0.75em 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 1.25rem;
+}
+#styles .features > li{
+  padding: 1rem;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background:#151c2a;
+  border:1px solid rgba(180,190,210,.28);
+  border-radius:12px;
+  padding:1rem;
+}
+#styles .link-allstyles{
+  display: inline-block;
+  margin: 1rem auto 0;
+  position: relative;
+  clear: both;
+}
+aside.profile ul{
+  list-style:none;
+  padding-left:0;
+  margin:0;
+}
+aside.profile li + li{ margin-top:.35rem; }
+aside.profile li span:first-child{
+  color:#a9b4c7;
+  display:inline-block;
+  min-width:4.8ch;
+}
+.page-footer ul{
+  list-style:none;
+  padding-left:0;
+  margin:0; 
+}
+.page-footer li{
+  display:inline-block;
+  margin: 0.25rem 0.5rem 0.25rem 0;
+}
+:focus{
+  outline:none;
+  outline-offset:3px;
+  border-radius:6px;
+}
+.link-github{
+  display:inline-flex;
+  align-items: center;
+  background: #7dc9ff;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  box-shadow: 6px 6px 0 #b0b2b5;
+}
+.link-github svg{
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-right: 6px;
+  vertical-align: middle;
+  fill: white;
+}
+.link-github:hover{
+  background: #57b4ff;
+  box-shadow: 4px 4px 0 #b0b2b5;
+}
+.page-footer .link-github{
+  display:inline-flex;
+  align-items: center;
+  background: #86d2ff;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.55rem .85rem;
+  border-radius: 999px;
+  box-shadow: none;
+}
+.page-footer .link-github svg{
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-right: 6px;
+  vertical-align: middle;
+  fill: rgb(0, 0, 0);
+}
+.page-footer .link-github:hover{
+  text-decoration: underline;
+}
+main > .container article > section.container {
+  margin-inline: 2rem;
+  padding: 1.125rem;
+}
+#files .container {
+  margin-inline: 2rem;
+  padding: 1.125rem;
+}
+aside.profile .container,
+aside#styles .container {
+  margin-inline: 2rem;
+  padding: 1.125rem;
+}
+.page-footer .container {
+  margin-inline: 2rem;
+  padding: 1.125rem;
+}
+.skip-link{
+  position:absolute;
+  left:0.5rem;
+  top: 0.5rem;
+  width:1px;
+  height:1px;
+  color: #57b4ff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+blockquote{
+  display: inline-block;
+  background-color: rgb(226, 238, 249);
+  color: #000000;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+#about ul li{
+  list-style: none;
+  background-color: rgb(226, 238, 249);
+  color:#000000;
+  display: inline-block;
+  margin: 0.3rem 0.5rem 0 0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+#files .container{
+  text-align: center;
+}
+#files .container h3{
+  text-align: center;
+}
+#files a{
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  padding: 0.55rem .85rem;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #0f1220;
+  background: #86d2ff; 
+}
