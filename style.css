@@ -233,6 +233,33 @@ aside.profile li span:first-child{
   background: #57b4ff;
   box-shadow: 4px 4px 0 #b0b2b5;
 }
+.page-footer {
+  background: linear-gradient(180deg, #3ea8ff 0%, #213b75 50%, #0b1b3b 100%);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  color: #e9edf4;
+}
+.page-footer p{
+  color: white;
+  font-weight: 1rem;
+  line-height: 1.6;
+  margin: 0.75rem 0;
+}
+
+.page-footer a{
+  display: block;
+  text-align: center;
+
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.page-footer a:hover{
+  text-decoration: underline;
+  color:rgb(36, 255, 160);
+}
+
 .page-footer .link-github{
   display:inline-flex;
   align-items: center;
